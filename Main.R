@@ -37,11 +37,11 @@ library(expss)
 
 #########Vorbereitung des Datensatzes
 setwd("H:/01 Studium/01 Bachelor of Arts/03 Schluesselqualifikationen/FOSSOS/Projekt/")
-dir.create("./Datensaetze/ESS/2018/Norwegen")
-main_df <- read.dta("Datensaetze/ESS/2018/Norwegen/ESS9NO.stata/ESS9NO.dta")
+main_df <- read.dta("./Datensaetze/ESS/2002 - 2018 [Dk; Est; Fin; Ice; Lith; Nor; Rus; Sw]/ESS1-8e01/ESS1-8e01.dta")
 main_df <- as_tibble(main_df)
 
-# ?unlink("./Seminararbeit/Bericht/Graphiken/*.uni.pdf")
+# dir.create("./Datensaetze/ESS/2018/Norwegen")
+# unlink("./Seminararbeit/Bericht/Graphiken/*.uni.pdf")
 
 #####Variablenliste:
 
@@ -49,7 +49,7 @@ main_df <- as_tibble(main_df)
 #####Aufbereitung der Variablen:
 ###Recodieren der Variablen:
 main_df$edlvebe
-main_df$anctry1
+summary(main_df$anctry1)
 
 ###Eingrenzen des Datensatzes:
 
