@@ -54,7 +54,6 @@ library(rms)
 
 # ESS Data by countries
 ESS_Nor <- read.spss(file = "/Users/flo/Documents/GitHub/FOSSOS_Project/ESS9NO.sav", to.data.frame = T)
-<<<<<<< HEAD
 ESS_Nor <- as_tibble(ESS_Nor)
 
 ESS_Sve <- read.spss(file = "/Users/flo/Documents/GitHub/FOSSOS_Project/ESS9SE.sav", to.data.frame = T)
@@ -62,10 +61,6 @@ ESS_Sve <- as_tibble(ESS_Sve)
 
 ESS_Fin <- read.spss(file = "/Users/flo/Documents/GitHub/FOSSOS_Project/ESS9FI.sav", to.data.frame = T)
 ESS_Fin <- as_tibble(ESS_Fin)
-=======
-ESS_Sve <- read.spss(file = "/Users/flo/Documents/GitHub/FOSSOS_Project/ESS9SE.sav", to.data.frame = T)
-ESS_Fin <- read.spss(file = "/Users/flo/Documents/GitHub/FOSSOS_Project/ESS9FI.sav", to.data.frame = T)
->>>>>>> ab4531db8935d067fb2ac05b5ed0a180c71326ff
 
 ### END?
 
